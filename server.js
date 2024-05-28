@@ -5,7 +5,7 @@ const Vehicle = require('./register');
 const Status = require('./status');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.use(bodyParser.json());
 
@@ -45,3 +45,5 @@ app.post('/api/updateStatus', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+
